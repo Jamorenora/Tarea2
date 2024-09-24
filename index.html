@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2: CSS3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 2: CSS3</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#box-model">Modelo de Caja</a></li>
+            <li><a href="#style-properties">Propiedades de Estilo</a></li>
+            <li><a href="#flexbox">Flexbox</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-wrapper">
+        <main>
+            <!-- Modelo de Caja -->
+            <section id="box-model">
+                <h2>1. Modelo de Caja (Box Model)</h2>
+                <div class="card">
+                    <img src="Imagen/Imagen de Ejemplo.jpg" alt="Imagen de Ejemplo">
+                    <div class="card-content">
+                        <h3>Bienvenido</h3>
+                        <p>Este es un Modelo de Caja en el cual utlizo una imagen para el diseño. Observe el padding, borde y margen aplicados.</p>
+                        <a href="#" class="btn">Leer Más</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Propiedades de Estilo -->
+            <section id="style-properties">
+                <h2>2. Propiedades de Estilo para la Visualización y Posicionamiento de Elementos</h2>
+
+                <!-- A. Position -->
+                <div class="position-example">
+                    <h3>A. Position</h3>
+                    <div class="position-container">
+                        <div class="static-box">Static</div>
+                        <div class="relative-box">Relative</div>
+                        <div class="absolute-box">Absolute</div>
+                        <div class="fixed-box">Fixed</div>
+                    </div>
+                </div>
+
+                <!-- B. Float y Clear -->
+                <div class="float-example">
+                    <h3>B. Float y Clear</h3>
+                    <div class="float-left">Float a la Izquierda</div>
+                    <div class="float-right">Float a la Derecha</div>
+                    <div class="clear-both">Un elemento con Clear Both</div>
+                </div>
+
+                <!-- C. Display -->
+                <div class="display-example">
+                    <h3>C. Display</h3>
+                    <div class="display-block">Display Block</div>
+                    <span class="display-inline">Display Inline</span>
+                    <div class="display-inline-block">Display Inline-Block</div>
+                    <div class="display-none">Display None (Oculto)</div>
+                </div>
+
+                <!-- D. Overflow -->
+                <div class="overflow-example">
+                    <h3>D. Overflow</h3>
+                    <div class="overflow-visible">
+                        <p>Overflow Visible: En este se muestra completamente, incluso si excede el tamaño del contenedor.</p>
+                    </div>
+                    <div class="overflow-hidden">
+                        <p>Overflow Hidden: En este se corta si excede el tamaño del contenedor.</p>
+                    </div>
+                    <div class="overflow-scroll">
+                        <p>Overflow Scroll: En este agrega barras de desplazamiento si el contenido excede el tamaño del contenedor.</p>
+                    </div>
+                    <div class="overflow-auto">
+                        <p>Overflow Auto: En este se agregan barras de desplazamiento solo cuando es necesario.</p>
+                    </div>
+                </div>
+
+                <!-- E. Visibility -->
+                <div class="visibility-example">
+                    <h3>E. Visibility</h3>
+                    <div class="visibility-visible">Visibility Visible</div>
+                    <div class="visibility-hidden">Visibility Hidden (Oculto pero ocupa espacio)</div>
+                </div>
+
+                <!-- F. Z-Index -->
+                <div class="z-index-example">
+                    <h3>F. Z-Index</h3>
+                    <div class="z-index-container">
+                        <div class="z-index-box box1">Caja 1 (Z-Index: 1)</div>
+                        <div class="z-index-box box2">Caja 2 (Z-Index: 2)</div>
+                        <div class="z-index-box box3">Caja 3 (Z-Index: 3)</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Flexbox -->
+            <section id="flexbox">
+                <h2>3. Diseño Flexible con Flexbox</h2>
+
+                <div class="flex-container">
+                    <div class="flex-item" style="order: 2;">Elemento 2</div>
+                    <div class="flex-item" style="order: 1;">Elemento 1</div>
+                    <div class="flex-item" style="order: 4;">Elemento 4</div>
+                    <div class="flex-item" style="order: 3;">Elemento 3</div>
+                    <div class="flex-item">Elemento 5</div>
+                    <div class="flex-item">Elemento 6</div>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Barra Lateral</h2>
+            <p>Se usa para contenido adicional o enlaces.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jackcing Alexander Moreno Ramírez. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
